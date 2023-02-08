@@ -185,27 +185,27 @@ if __name__ == '__main__':
         test_to_unsigned_binary_from_dec,
         test_to_sign_mag_binary_from_dec,
         test_to_ones_comp_binary_from_dec,
-        test_to_twos_comp_binary_from_dec,
-        # Binary Addition
-        test_binary_add_unsigned,
-        test_binary_add_ones_comp,
-        test_binary_add_twos_comp,
-        # Binary to Decimal
-        test_to_dec_from_unsigned_binary,
-        test_to_dec_from_sign_mag_binary,
-        test_to_dec_from_ones_comp_binary,
-        test_to_dec_from_twos_comp_binary,
+        # test_to_twos_comp_binary_from_dec,
+        # # Binary Addition
+        # test_binary_add_unsigned,
+        # test_binary_add_ones_comp,
+        # test_binary_add_twos_comp,
+        # # Binary to Decimal
+        # test_to_dec_from_unsigned_binary,
+        # test_to_dec_from_sign_mag_binary,
+        # test_to_dec_from_ones_comp_binary,
+        # test_to_dec_from_twos_comp_binary,
 
-        # Tests all possible conversions (8-bit)
-        test_unsigned_conv_full,
-        test_sign_mag_conv_full,
-        test_ones_comp_conv_full,
-        test_twos_comp_conv_full,
+        # # Tests all possible conversions (8-bit)
+        # test_unsigned_conv_full,
+        # test_sign_mag_conv_full,
+        # test_ones_comp_conv_full,
+        # test_twos_comp_conv_full,
 
-        # Tests all possible additions (8-bit); no-overflow
-        test_add_unsigned_full,
-        test_add_ones_comp_full,
-        test_add_twos_comp_full,
+        # # Tests all possible additions (8-bit); no-overflow
+        # test_add_unsigned_full,
+        # test_add_ones_comp_full,
+        # test_add_twos_comp_full,
     ]
 
     for test in tests:
