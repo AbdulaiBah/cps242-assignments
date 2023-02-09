@@ -181,13 +181,13 @@ def test_add_twos_comp_full():
 
 if __name__ == '__main__':
     tests = [
-        # Decimal to Binary
-        test_to_unsigned_binary_from_dec,
-        test_to_sign_mag_binary_from_dec,
-        test_to_ones_comp_binary_from_dec,
+        # # Decimal to Binary
+        # test_to_unsigned_binary_from_dec,
+        # test_to_sign_mag_binary_from_dec,
+        # test_to_ones_comp_binary_from_dec,
         # test_to_twos_comp_binary_from_dec,
         # # Binary Addition
-        # test_binary_add_unsigned,
+        test_binary_add_unsigned,
         # test_binary_add_ones_comp,
         # test_binary_add_twos_comp,
         # # Binary to Decimal

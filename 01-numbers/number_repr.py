@@ -61,8 +61,31 @@ def binary_add_unsigned(bm, bn):
     '''
     Adds 2 unsigned binary numbers.
     '''
-    
-    return []
+    binary = list(range(8))
+    i = 7
+    carry = 0
+    while i >= 0:
+        if bm[i] == 0 and bn[i] == 0:
+            if carry != 0:
+                binary[i] = 1
+                carry -= 1
+            else:
+                binary[i] = 0
+        elif bm[i] == 1 and bn[i] == 1:
+            if carry != 0:
+                binary[i] = 1
+                carry -= 1
+            else:
+                binary[i] = 0
+                carry += 1
+        elif bm[i] == 1 and bn[i] == 0 or bm[i] == 0 and bn[i] == 1:
+            if carry != 0:
+                binary[i] = 0
+                #carry doesnt change because new carry it is both incremented and decremented on this step
+            else:
+                binary[i] = 1
+        i-=1
+    return binary
 
 
 def binary_add_ones_comp(bm, bn):
@@ -85,7 +108,13 @@ def to_dec_from_unsigned_binary(bm):
     '''
     Converts an unsigned binary number to decimal.
     '''
-    return 0
+    ans = 0
+    i = 0
+    while i < len(bm):
+        if bm[i] == 1:
+            ans += 2**(len(bm)-1-i)
+        i+=1
+    return ans
 
 
 def to_dec_from_sign_mag_binary(bm):
